@@ -26,14 +26,14 @@ setup(
         'alembic>=0.8.10',
         'multimethod>=1.0.0',
         'graphviz>=0.8',
-        'mara-page>=1.3.0',
-        'psycopg2-binary>=2.7.3'],
+        'mara-page>=1.3.0'],
 
     setup_requires=['setuptools_scm'],
     include_package_data=True,
 
     extras_require={
         'test': ['pytest', 'pytest_click'],
+        'postgresql': ['psycopg2-binary>=2.7.3'],
         'mssql': ['pyodbc'],
         'bigquery':
             ['google-cloud-bigquery', # Google maintained bigquery client
